@@ -17,6 +17,9 @@
   padding: 40px 0;
   font-size: 16px;
   transition: all 0.4s;
+  @include max-w($s) {
+    padding: 10px 0;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
