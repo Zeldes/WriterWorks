@@ -1,0 +1,33 @@
+{
+  "name": "start-gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^4.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp-uglify": "^3.0.2",
+    "ion-rangeslider": "^2.3.1",
+    "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
+    "mixitup": "^3.3.1",
+    "sass": "^1.43.4",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "gulp": "^4.0.2"
+  }
+}

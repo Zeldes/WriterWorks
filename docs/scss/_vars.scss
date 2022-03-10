@@ -1,0 +1,62 @@
+$accent:  #D83838;
+$default: #303030;
+$bg: #FBFBFB;
+$burger: #DF5F5F;
+$black: #000000;
+$white: #fff;
+$border: #D9D9D9;
+$border-gray: #B7B7B7;
+$item-before:#E0E0E0;
+$border-black: #303030;
+$form-bg: #313131;
+$footer-bg: #414040;
+
+
+$xxl: 1550px;
+$xl :1130px;
+$ll: 977px;
+$l: 868px;
+$mp: 768px;
+$sm: 576px;
+$s: 375px;
+
+@mixin max-w($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+
+}
+
+
+%Montserrat-400 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+%Montserrat-500 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+%Montserrat-700 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+%Roboto-400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+%Roboto-700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+%Roboto-900 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+
+

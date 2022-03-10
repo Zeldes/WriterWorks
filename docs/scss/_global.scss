@@ -1,0 +1,218 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  @extend %Montserrat-500;
+  font-size: 22px;
+  color: $default;
+  background-color: $bg;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1207px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container--big {
+  max-width: 1508px;
+}
+
+.logo {
+  transition: all 0.4s;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.title {
+  @extend %Montserrat-700;
+  font-size: 42px;
+  line-height: 1.1;
+  text-transform: uppercase;
+
+  @include max-w($sm) {
+    font-size: 34px;
+  }
+
+  @include max-w($s) {
+    font-size: 28px;
+  }
+
+  span {
+    color: $accent;
+  }
+}
+
+.btn {
+  font-size: 16px;
+  color: #fff;
+  padding: 20px;
+  background-color: $accent;
+  border: 1px solid $accent;
+}
+
+.btn--accent {
+  background-color: #fff;
+  color: $default;
+}
+
+.status {
+  transition: all 0.4s;
+  outline: 0;
+  border-radius: 5px;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(255, 56, 56, 0.7);
+  }
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: rgba(190, 8, 8, 0.1);
+  }
+}
+
+.accent {
+  color: $accent;
+}
+
+.bold-accent {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.subtitle {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 54px;
+    height: 12px;
+    top: 8px;
+    left: 0;
+    background-image: url(../images/icons/stroke.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.status-btn {
+  transition: all 0.4s;
+  outline: 0;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(66, 1, 1, 0.7);
+  }
+  &:hover {
+    background-color: $white;
+    color: $default;
+    border: 1px solid $accent;
+  }
+  &:active {
+  box-shadow: inset 0 7px 4px rgba(0, 0, 0, 0.25);
+  background-color:  $accent;
+  color: $white;
+}
+}
+
+.section-top {
+  margin-bottom: 48px
+}
+
+.input-status {
+  outline: 0;
+  transition: all 0.4s;
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(255, 56, 56, 0.7);
+  }
+
+  &:hover::placeholder {
+    color: $default;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
+.input {
+  font-size: 14px;
+}
+
+.burger {
+  background-color: $burger;
+  border-radius: 50%;
+  position: relative;
+  display: none;
+  width: 44px;
+  height: 44px;
+  z-index: 11;
+
+  @include max-w($mp) {
+    display: block;
+  }
+}
+
+.burger__line,
+.burger::before,
+.burger::after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  right: 10px;
+  width: 24px;
+  height: 2px;
+  top: 21px;
+  transition: transform 0.4s;
+  border-radius: 10px;
+}
+
+.burger::before {
+  top: 14px;
+}
+
+.burger::after {
+  bottom: 14px;
+  top: unset;
+}
+
+.burger--active {
+  background-color: inherit;
+  border: 1px solid #fff;
+}
+
+.burger--active::before {
+  transform: rotate(45deg);
+  top: 21px;
+  right: 9px;
+}
+
+.burger--active::after {
+  transform: rotate(-45deg);
+  bottom: 19px;
+  right: 9px;
+}
+
+.burger--active .burger__line {
+  transform: scale(0);
+}
