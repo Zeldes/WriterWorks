@@ -17,6 +17,9 @@
   padding: 40px 0;
   font-size: 16px;
   transition: all 0.4s;
+  @include max-w($sm) {
+    padding: 10px;
+  }
   @include max-w($s) {
     padding: 10px 0;
   }
@@ -29,7 +32,6 @@
 }
 
 .header--show {
-  padding: 10px 0;
   background-color: $white;
 }
 
@@ -1207,7 +1209,7 @@
   right: 0;
   opacity: 0;
   visibility: hidden;
-
+  z-index: 200;
   &__body {
     min-height: 100%;
     display: flex;
@@ -1223,16 +1225,15 @@
     color: $black;
     max-width: 600px;
     padding: 33px 22px;
-
+    z-index: 101;
     @include max-w($sm) {
       max-width: 300px;
     }
   }
 
   &__close {
-    padding: 12px;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 16px;
     position: absolute;
   }
 
